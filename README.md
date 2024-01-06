@@ -19,5 +19,6 @@ Core Features:
 - Support real-time statistics and data analysis
 - Customized UI testing engine with Selenium 4.x with Spring Boot 3.x
 - DevOps pipeline with Jenkins, Docker, Kubernetes, and AWS
+- An S3 compatible distributed object storage system via MinIO for large amounts of testing results.
 - ...
 
