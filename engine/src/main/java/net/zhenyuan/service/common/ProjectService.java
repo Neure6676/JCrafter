@@ -1,7 +1,6 @@
 package net.zhenyuan.service.common;
 import net.zhenyuan.dto.common.ProjectDTO;
-import net.zhenyuan.req.common.ProjectAddReq;
-import net.zhenyuan.req.common.ProjectDelReq;
+import net.zhenyuan.req.common.ProjectSaveReq;
 import net.zhenyuan.req.common.ProjectUpdateReq;
 
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.List;
 public interface ProjectService {
     List<ProjectDTO> list();
 
-    int add(ProjectAddReq projectAddReq);
+    int save(ProjectSaveReq projectSaveReq);
 
     int update(ProjectUpdateReq projectAddReq);
 

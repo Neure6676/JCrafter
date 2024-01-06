@@ -1,7 +1,7 @@
 package net.zhenyuan.controller.common;
 
 import jakarta.annotation.Resource;
-import net.zhenyuan.req.common.ProjectAddReq;
+import net.zhenyuan.req.common.ProjectSaveReq;
 import net.zhenyuan.req.common.ProjectDelReq;
 import net.zhenyuan.req.common.ProjectUpdateReq;
 import net.zhenyuan.service.common.ProjectService;
@@ -20,9 +20,9 @@ public class ProjectController {
         return JsonData.buildSuccess(projectService.list());
     }
 
-    @PostMapping("/add")
-    public JsonData add(@RequestBody ProjectAddReq req) {
-        return JsonData.buildSuccess(projectService.add(req));
+    @PostMapping("/save")
+    public JsonData save(@RequestBody ProjectSaveReq req) {
+        return JsonData.buildSuccess(projectService.save(req));
     }
 
     @PostMapping("/update")

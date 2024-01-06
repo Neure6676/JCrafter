@@ -3,7 +3,7 @@ package net.zhenyuan.req.common;
 import lombok.Data;
 
 @Data
-public class ProjectAddReq {
+public class ProjectSaveReq {
 
     private String name;
 

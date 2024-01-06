@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import net.zhenyuan.dto.common.ProjectDTO;
 import net.zhenyuan.mapper.ProjectMapper;
 import net.zhenyuan.model.ProjectDO;
-import net.zhenyuan.req.common.ProjectAddReq;
+import net.zhenyuan.req.common.ProjectSaveReq;
 import net.zhenyuan.req.common.ProjectUpdateReq;
 import net.zhenyuan.service.common.ProjectService;
 import net.zhenyuan.utils.SpringBeanUtil;
@@ -31,9 +31,9 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public int add(ProjectAddReq projectAddReq) {
+    public int save(ProjectSaveReq projectSaveReq) {
 
-        ProjectDO projectDO = SpringBeanUtil.copyProperties(projectAddReq, ProjectDO.class);
+        ProjectDO projectDO = SpringBeanUtil.copyProperties(projectSaveReq, ProjectDO.class);
 
         return projectMapper.insert(projectDO);
     }
